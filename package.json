@@ -1,6 +1,6 @@
 {
   "name": "@appitsolution/react-telegram-auth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React library for Telegram Login Widget integration",
   "type": "module",
   "main": "./dist/index.cjs",
