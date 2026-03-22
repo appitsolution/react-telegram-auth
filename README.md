@@ -5,13 +5,13 @@ React library for Telegram Login Widget with server-side validation helper.
 ## Installation
 
 ```bash
-npm install react-telegram-auth
+npm install @appitsolution/react-telegram-auth
 ```
 
 ## Quick start
 
 ```tsx
-import { TelegramLoginButton, useTelegramLogin } from "react-telegram-auth";
+import { TelegramLoginButton, useTelegramLogin } from "@appitsolution/react-telegram-auth";
 
 export function LoginPage() {
   const { user, isAuthenticated, handleAuth } = useTelegramLogin();
@@ -36,7 +36,7 @@ export function LoginPage() {
 Never trust Telegram auth payload on frontend only. Verify hash on server:
 
 ```ts
-import { verifyTelegramAuth, type TelegramAuthData } from "react-telegram-auth/server";
+import { verifyTelegramAuth, type TelegramAuthData } from "@appitsolution/react-telegram-auth/server";
 
 function handleTelegramCallback(payload: TelegramAuthData) {
   const isValid = verifyTelegramAuth(payload, process.env.TELEGRAM_BOT_TOKEN ?? "", {
